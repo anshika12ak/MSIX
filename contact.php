@@ -1,0 +1,9 @@
+<?php
+require __DIR__ . '/includes/bootstrap.php';
+$submitted = ($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST';
+render_header(t('page.contact'), 'contact');
+?>
+<section class="inner-hero page-hero" style="--hero-bg:url('<?= h(content_img('engineering project discussion office team', 12)) ?>')"><div class="container"><p class="eyebrow"><?= h(t('page.contact')) ?></p><h1><?= h($lang === 'it' ? 'Parliamo del Tuo Progetto' : 'Let’s Discuss Your Project') ?></h1><p><?= h($lang === 'it' ? 'Condividi la tua esigenza per progettazione ingegneristica, sviluppo prodotto, automazione o supporto all’esecuzione.' : 'Share your requirement for engineering design, product development, automation, or execution support.') ?></p></div></section>
+<section class="page-content"><div class="container"><div class="page-media"><img src="<?= h(content_img('global offices engineering support', 12)) ?>" alt="Contact and office locations visual"></div><div class="two-col"><div class="content-card"><h2><?= h($lang === 'it' ? 'Uffici MSIX' : 'MSIX Offices') ?></h2><p><?= h($lang === 'it' ? 'Milan, Italy' : 'Milan, Italy') ?></p><p>Delhi, India</p><p>Kolkata, India</p><p><?= h(t('contact.email_label')) ?>: <a href="mailto:<?= h($site['email']) ?>"><?= h($site['email']) ?></a></p></div><form class="contact-form-lite" method="post" action="contact.php"><?php if ($submitted): ?><div class="notice-success"><?= h(t('contact.thankyou')) ?></div><?php endif; ?><label><?= h(t('contact.name')) ?><input type="text" name="name" required></label><label><?= h(t('contact.email_label')) ?><input type="email" name="email" required></label><label><?= h(t('contact.phone')) ?><input type="text" name="phone"></label><label><?= h(t('contact.message')) ?><textarea name="message" rows="5" required></textarea></label><button class="btn btn-primary" type="submit"><?= h(t('contact.send')) ?></button></form></div></div></section>
+<?php render_footer(); ?>
+

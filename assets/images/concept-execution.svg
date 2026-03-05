@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">From Conceptual Design to Project Execution</title>
+  <desc id="desc">Engineering process flow illustration for MSIX.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2740"/>
+      <stop offset="100%" stop-color="#1f4d8b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="#9ec5ff" stroke-width="6" opacity="0.75">
+    <path d="M140 620H420L540 430H790L910 300H1240"/>
+    <circle cx="140" cy="620" r="18" fill="#9ec5ff"/>
+    <circle cx="420" cy="620" r="18" fill="#9ec5ff"/>
+    <circle cx="540" cy="430" r="18" fill="#9ec5ff"/>
+    <circle cx="790" cy="430" r="18" fill="#9ec5ff"/>
+    <circle cx="910" cy="300" r="18" fill="#9ec5ff"/>
+    <circle cx="1240" cy="300" r="18" fill="#9ec5ff"/>
+  </g>
+  <g fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="800" y="140" font-size="62" font-weight="700">From Conceptual Design to Project Execution</text>
+    <text x="140" y="685" font-size="30">Concept</text>
+    <text x="420" y="685" font-size="30">Detailed Design</text>
+    <text x="540" y="495" font-size="30">Simulation</text>
+    <text x="790" y="495" font-size="30">Prototype</text>
+    <text x="910" y="365" font-size="30">Installation</text>
+    <text x="1240" y="365" font-size="30">Commissioning</text>
+  </g>
+</svg>
