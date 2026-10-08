@@ -9,7 +9,7 @@ render_header(t('page.about'), 'about');
     <div class="container reveal-item">
         <span class="eyebrow-pill dark-gold">🇮🇹 <?= $it ? 'Direzione Europea' : 'European Leadership' ?> ⇄ 🇮🇳 <?= $it ? 'Produzione in India' : 'Indian Scale' ?></span>
         <h1><?= h($it ? 'Perché Scegliere MSIX' : 'Why Choose MSIX') ?></h1>
-        <p><?= h($it ? 'Il partner operativo con sede a Milano che unisce la precisione dell’ingegneria europea con la capacità manifatturiera e le opportunità di mercato dell’India.' : 'Your trusted engineering and operating partner bridging European technical precision with Indian industrial manufacturing scale and market opportunities.') ?></p>
+        <p><?= h($it ? 'Il partner operativo con sede a Milano che unisce la precisione dell’ingegneria europea con la capacità manifatturiera e le opportunità di mercato dell’India.' : 'The Milan-based operating partner that combines the precision of European engineering with the manufacturing capabilities and market opportunities of India.') ?></p>
     </div>
 </section>
 
@@ -19,7 +19,7 @@ render_header(t('page.about'), 'about');
         <div class="section-head-wrap text-center reveal-item">
             <span class="eyebrow-pill blue"><?= $it ? 'Scopo & Direzione Strategica' : 'Our Purpose & Strategic Direction' ?></span>
             <h2><?= $it ? 'La Nostra Missione e Visione' : 'Our Mission & Vision' ?></h2>
-            <p><?= $it ? 'Un mandato chiaro e rigoroso per connettere la precisione dell’ingegneria europea con la capacità produttiva dell’India.' : 'A clear, uncompromising mandate to connect European precision engineering with Indian industrial scale.' ?></p>
+            <p><?= $it ? 'Un mandato chiaro e rigoroso per connettere la precisione dell’ingegneria europea con la capacità produttiva dell’India.' : 'A clear, uncompromising mandate to connect European precision engineering with Indian industrial manufacturing capabilities.' ?></p>
         </div>
 
         <div class="mission-vision-grid">
@@ -28,24 +28,24 @@ render_header(t('page.about'), 'about');
                 <div class="mv-icon-badge">🎯</div>
                 <h3><?= $it ? 'La Nostra Missione' : 'Our Mission' ?></h3>
                 <p>
-                    <?= $it ? 'Consentire alle aziende industriali e manifatturiere europee di cogliere appieno le opportunità offerte dall’India — nell’outsourcing ingegneristico, nella fornitura di componenti meccanici e nelle gare pubbliche/private — eliminando ogni rischio tecnico, linguistico, qualitativo o procedurale.' : 'To empower European industrial enterprises with seamless, risk-free access to India’s world-class engineering talent, audited manufacturing supply chains, and multi-billion dollar tender opportunities — governed by strict European standards, rigorous quality control, and zero communication barriers.' ?>
+                    <?= $it ? 'Consentire alle imprese industriali europee un accesso continuo e privo di rischi ai talenti ingegneristici Indiani di livello mondiale, a catene di fornitura produttive controllate e a opportunità di gare d’appalto multimiliardarie, regolate da rigorosi standard europei, rigorosi controlli di qualità e zero barriere di comunicazione.' : 'To empower European industrial enterprises with seamless, risk-free access to India’s world-class engineering talent, audited manufacturing supply chains, and multi-billion dollar tender opportunities — governed by strict European standards, rigorous quality control, and zero communication barriers.' ?>
                 </p>
                 <ul class="mv-feature-list">
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Rigorosa aderenza agli standard qualitativi ISO, EN e tolleranze GD&T' : 'Strict adherence to European ISO/EN norms & precision GD&T tolerances' ?></span>
+                        <span><?= $it ? 'Rigoroso rispetto delle norme europee ISO/EN e delle tolleranze di precisione GD&T' : 'Strict adherence to European ISO/EN norms & precision GD&T tolerances' ?></span>
                     </li>
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Protezione totale dei disegni CAD e del know-how tramite accordi NDA europei' : 'Guaranteed European-standard NDA intellectual property (IP) protection' ?></span>
+                        <span><?= $it ? 'Accordo di non divulgazione (NDA) conforme agli standard europei – protezione della proprietà intellettuale (IP)' : 'Guaranteed European-standard NDA - intellectual property (IP) protection' ?></span>
                     </li>
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Supervisione continua in fabbrica e tracciabilità con certificati EN 10204 3.1' : 'Milestone-based shop-floor audits with traceable EN 10204 3.1 certificates' ?></span>
+                        <span><?= $it ? 'Audit in officina basati su tappe fondamentali con certificati EN 10204 3.1 tracciabili' : 'Milestone-based shop-floor audits with traceable EN 10204 3.1 certificates' ?></span>
                     </li>
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Riduzione del 35-50% dei costi di sviluppo e produzione senza compromessi qualitativi' : '35–50% cost optimization without compromising mechanical reliability' ?></span>
+                        <span><?= $it ? 'Ottimizzazione dei costi non inferiore al 35–50% senza compromettere l’affidabilità meccanica' : 'Not less than 35–50% cost optimization without compromising mechanical reliability' ?></span>
                     </li>
                 </ul>
             </div>
@@ -55,24 +55,24 @@ render_header(t('page.about'), 'about');
                 <div class="mv-icon-badge">🔭</div>
                 <h3><?= $it ? 'La Nostra Visione' : 'Our Vision' ?></h3>
                 <p>
-                    <?= $it ? 'Diventare il punto di riferimento primario e il partner di fiducia più autorevole per l’interscambio ingegneristico e industriale tra Europa e India, stabilendo un nuovo standard di eccellenza, trasparenza e integrità tecnica cross-border.' : 'To be the premier, most trusted cross-border engineering bridge between Europe and India — pioneering transparent milestone-driven technical collaboration, localized technology deployment, and audited industrial manufacturing.' ?>
+                    <?= $it ? 'Essere il principale e più affidabile ponte ingegneristico transfrontaliero tra Europa e India, pioniere di una collaborazione tecnica trasparente basata su traguardi, di un\'implementazione tecnologica localizzata e di una produzione industriale certificata.' : 'To be the premier, most trusted cross-border engineering bridge between Europe and India — pioneering transparent milestone-driven technical collaboration, localized technology deployment, and audited industrial manufacturing.' ?>
                 </p>
                 <ul class="mv-feature-list">
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Creare una rete integrata di poli ingegneristici e produttivi di altissimo livello' : 'Cultivating an elite, vetted network of audited manufacturers and specialized design hubs' ?></span>
+                        <span><?= $it ? 'Creazione di una rete d’élite, accuratamente selezionata, di produttori sottoposti a revisione e centri di progettazione specializzati' : 'Cultivating an elite, vetted network of audited manufacturers and specialized design hubs' ?></span>
                     </li>
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Digitalizzare e rendere trasparenti i controlli dimensionali e i collaudi fisici' : 'Pioneering transparent digital inspection reports and 3D CMM validation logs' ?></span>
+                        <span><?= $it ? 'Introduzione di rapporti di ispezione digitali trasparenti e registri di convalida 3D CMM' : 'Pioneering transparent digital inspection reports and 3D CMM validation logs' ?></span>
                     </li>
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Accelerare il trasferimento tecnologico europeo e la produzione localizzata in India' : 'Accelerating European technology transfer and localized industrial deployment in India' ?></span>
+                        <span><?= $it ? 'Accelerazione del trasferimento tecnologico europeo e dell’implementazione industriale localizzata in India' : 'Accelerating European technology transfer and localized industrial deployment in India' ?></span>
                     </li>
                     <li>
                         <span class="mv-check">✓</span>
-                        <span><?= $it ? 'Garantire una partnership a lungo termine fondata su risultati misurabili e affidabilità' : 'Fostering long-term industrial partnerships founded on measurable reliability' ?></span>
+                        <span><?= $it ? 'Promozione di partnership industriali a lungo termine fondate su un’affidabilità misurabile' : 'Fostering long-term industrial partnerships founded on measurable reliability' ?></span>
                     </li>
                 </ul>
             </div>
@@ -87,28 +87,28 @@ render_header(t('page.about'), 'about');
             <img src="<?= h(asset('assets/images/raghav-kumar.jpg')) ?>" alt="Raghav Kumar - Founder & Director MSIX">
             <div class="founder-glass-caption">
                 <strong>Raghav Kumar</strong>
-                <span>Founder &amp; Director &bull; Milan, Italy &bull; 15+ Years Industrial Experience</span>
+                <span><?= $it ? 'Fondatore e Direttore (ubicato a Milano, Italia) • Con oltre 15 anni di esperienza nel settore industriale' : 'Founder & Director • Milan, Italy • 15+ Years Industrial Experience' ?></span>
             </div>
         </div>
         <div class="founder-info-column reveal-item">
-            <span class="eyebrow-pill gold"><?= h($it ? 'Profilo Fondatore & Visione' : 'Leadership & Engineering Philosophy') ?></span>
-            <h2><?= h($it ? 'Coordinamento Diretto dall’Italia con Presidio Operativo in India' : 'Direct Governance from Italy with Deep Roots on the Ground in India') ?></h2>
+            <span class="eyebrow-pill gold"><?= h($it ? 'Leadership e filosofia ingegneristica' : 'Leadership & Engineering Philosophy') ?></span>
+            <h2><?= h($it ? 'Una governance diretta dall’Italia con profonde radici sul territorio indiano' : 'Direct Governance from Italy with Deep Roots on the Ground in India') ?></h2>
             <p class="lead-quote">
-                <?= h($it ? '“MSIX nasce per eliminare i rischi tecnici, culturali e logistici che le aziende europee affrontano quando operano sul mercato industriale indiano.”' : '“MSIX was built to eliminate the technical, operational, and cultural risks European industrial enterprises face when expanding or sourcing in India.”') ?>
+                <?= h($it ? '“MSIX è stata creata per eliminare i rischi tecnici, operativi e culturali che le imprese industriali europee devono affrontare quando si espandono o si riforniscono in India.”' : '“MSIX was built to eliminate the technical, operational, and cultural risks European industrial enterprises face when expanding or sourcing in India.”') ?>
             </p>
             <p>
-                <?= h($it ? 'Raghav Kumar, Founder & Director, è un ingegnere meccanico con sede a Milano, Italia, con oltre 15 anni di esperienza maturata nella progettazione meccanica, gestione di progetti complessi e vendite tecniche internazionali. Avendo collaborato a lungo sia con OEM europei che con i principali distretti produttivi indiani, Raghav conosce a fondo gli standard qualitativi ISO/EN, le tolleranze geometriche GD&T e le dinamiche operative necessarie per garantire risultati certi.' : 'Raghav Kumar, Founder & Director, is a mechanical engineer based in Milan, Italy, with over 15 years of hands-on experience in mechanical design, heavy engineering, cross-border project management, and technical sales across Europe and India. Having worked extensively with European OEMs and premier Indian manufacturing supply chains, Raghav ensures every project satisfies strict international quality, tolerance, and delivery standards.') ?>
+                <?= h($it ? 'Raghav Kumar, fondatore e amministratore delegato di MSIX, è un ingegnere meccanico indiano laureato presso il Politecnico di Milano. Con sede a Milano, in Italia, vanta oltre 15 anni di esperienza sul campo nella progettazione meccanica, nell’ingegneria pesante, nella gestione di progetti transnazionali e nelle vendite tecniche in Europa e in India. Grazie alla sua vasta esperienza di collaborazione con OEM europei e con le principali catene di fornitura manifatturiere indiane, Raghav garantisce che ogni progetto soddisfi rigorosi standard internazionali in materia di qualità, tolleranze e tempi di consegna.' : 'Raghav Kumar, MSIX founder and CEO, is an Indian mechanical engineer with a degree from the Polytechnic University of Milan. Based in Milan, Italy, he has over 15 years of hands-on experience in mechanical design, heavy engineering, cross-border project management, and technical sales in Europe and India. Thanks to his extensive experience working with European OEMs and major Indian manufacturing supply chains, Raghav ensures that each project meets rigorous international standards for quality, tolerances, and delivery times.') ?>
             </p>
             <p>
-                <?= h($it ? 'Ogni progetto gestito da MSIX è regolato da contratti chiari, milestone tecniche verificabili, rigorosa protezione della proprietà intellettuale (IP) e aggiornamenti periodici dettagliati con report fotografici e certificati di collaudo.' : 'Every MSIX engagement begins with an agreed technical scope, milestone-driven accountability, audited supplier checks, strict European IP protection, and regular progress reporting with certified test documentation.') ?>
+                <?= h($it ? 'Ogni progetto MSIX prende il via in un ambito tecnico concordato, responsabilità basate su milestone, controlli certificati dei fornitori, una rigorosa protezione della proprietà intellettuale (IP) in ambito europeo e rapporti periodici sullo stato di avanzamento corredati da documentazione di test certificata.' : 'Every MSIX engagement begins with an agreed technical scope, milestone-driven accountability, audited supplier checks, strict European IP protection, and regular progress reporting with certified test documentation.') ?>
             </p>
             <div class="hub-strip-bar">
-                <strong><?= $it ? 'I Nostri Presidi' : 'Operating Presence' ?>:</strong>
-                <span>Milan (European Direction) &bull; Delhi (Tenders &amp; Government) &bull; Kolkata (CAD/FEM &amp; Factory Quality)</span>
+                <strong><?= $it ? 'Centri operativi strategici' : 'Operating Presence' ?>:</strong>
+                <span><?= $it ? 'Milano (Direzione europea) • Delhi (Gare d\'appalto) • Calcutta (Ingegneria e controllo qualità)' : 'Milan (European Direction) • Delhi (Tenders & Government) • Kolkata (CAD/FEM & Factory Quality)' ?></span>
             </div>
             <div class="button-duo-row" style="margin-top:1.5rem;">
-                <a class="btn btn-primary btn-lg" href="contact.php"><?= h($it ? 'Parliamo della Vostra Esigenza' : 'Schedule Scoping Call') ?> &rarr;</a>
-                <a class="btn btn-outline-dark btn-lg" href="services.php"><?= h($it ? 'Scopri Cosa Offriamo' : 'Explore Our Services') ?></a>
+                <a class="btn btn-primary btn-lg" href="contact.php"><?= h($it ? 'Fissa una chiamata preliminare' : 'Schedule Scoping Call') ?> &rarr;</a>
+                <a class="btn btn-outline-dark btn-lg" href="services.php"><?= h($it ? 'Scopri i nostri servizi' : 'Explore Our Services') ?></a>
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@ render_header(t('page.about'), 'about');
         <div class="section-head-wrap text-center reveal-item">
             <span class="eyebrow-pill blue"><?= $it ? 'I Nostri Valori Fondamentali' : 'Our Guiding Principles' ?></span>
             <h2><?= $it ? 'I Quattro Pilastri del Metodo MSIX' : 'The Four Pillars of the MSIX Operating Model' ?></h2>
-            <p><?= $it ? 'Principi inderogabili di integrità ingegneristica, trasparenza e qualità su cui poggia ogni nostro incarico.' : 'Non-negotiable standards of engineering integrity, transparency, and governance that underpin every client engagement.' ?></p>
+            <p><?= $it ? 'Standard inderogabili di integrità ingegneristica, trasparenza e governance che sono alla base di ogni rapporto con i clienti.' : 'Non-negotiable standards of engineering integrity, transparency, and governance that underpin every client engagement.' ?></p>
         </div>
 
         <div class="values-quad-grid">
@@ -132,20 +132,20 @@ render_header(t('page.about'), 'about');
 
             <div class="value-pillar-card reveal-item">
                 <div class="value-icon-box">🔍</div>
-                <h3><?= $it ? 'Trasparenza Totale' : 'Radical Transparency' ?></h3>
-                <p><?= $it ? 'Milestone concordate con roadmap chiare, report fotografici di avanzamento fabbrica e certificati di prova 3.1 tracciabili.' : 'Milestone-based governance with open communication, real-time photographic shop-floor audits, and traceable inspection reports.' ?></p>
+                <h3><?= $it ? 'Trasparenza totale' : 'Radical Transparency' ?></h3>
+                <p><?= $it ? 'Governance basata su traguardi con comunicazione aperta, controlli fotografici in tempo reale in officina e rapporti di ispezione tracciabili.' : 'Milestone-based governance with open communication, real-time photographic shop-floor audits, and traceable inspection reports.' ?></p>
             </div>
 
             <div class="value-pillar-card reveal-item">
                 <div class="value-icon-box">🛡️</div>
                 <h3><?= $it ? 'Protezione IP & NDA' : 'IP Protection & NDA' ?></h3>
-                <p><?= $it ? 'Trattamento rigoroso dei disegni CAD e dei segreti industriali sotto accordi di non divulgazione (NDA) validi in Europa.' : 'Your proprietary CAD models, formulations, and designs are safeguarded under strict European-enforceable NDAs and secure data protocols.' ?></p>
+                <p><?= $it ? 'I vostri modelli CAD, le vostre formulazioni e i vostri progetti esclusivi sono tutelati da accordi di riservatezza (NDA) rigorosi e applicabili a livello europeo e da protocolli di sicurezza dei dati.' : 'Your proprietary CAD models, formulations, and designs are safeguarded under strict European-enforceable NDAs and secure data protocols.' ?></p>
             </div>
 
             <div class="value-pillar-card reveal-item">
                 <div class="value-icon-box">⚡</div>
-                <h3><?= $it ? 'Efficienza & Velocità' : 'Speed & Cost Scale' ?></h3>
-                <p><?= $it ? 'Accesso immediato a team di ingegneri specializzati e fornitori auditati per ridurre tempi di sviluppo e costi di produzione.' : 'Direct access to vetted manufacturing ecosystems and specialized engineering teams, compressing lead times and optimizing total cost.' ?></p>
+                <h3><?= $it ? 'Velocità e monitoraggio dei costi' : 'Speed & Cost Scale' ?></h3>
+                <p><?= $it ? 'Accesso diretto a ecosistemi produttivi verificati e a team di ingegneri specializzati, che consentono di ridurre i tempi di consegna e ottimizzare il costo totale.' : 'Direct access to vetted manufacturing ecosystems and specialized engineering teams, compressing lead times and optimizing total cost.' ?></p>
             </div>
         </div>
     </div>
@@ -157,14 +157,14 @@ render_header(t('page.about'), 'about');
         <div class="section-head-wrap text-center reveal-item">
             <span class="eyebrow-pill blue"><?= h($it ? 'Presenza Globale & Operativa' : 'Operational Footprint') ?></span>
             <h2><?= h($it ? 'I Nostri Tre Hub Strategici Integrati' : 'Our Three Integrated Operating Hubs') ?></h2>
-            <p><?= h($it ? 'Un ponte continuativo e collaudato tra Italia e India che azzera le distanze, i fusi orari e le complessità operative.' : 'A robust, time-tested bridge between Europe and India eliminating cross-border friction, communication delays, and operational blind spots.') ?></p>
+            <p><?= h($it ? 'Un ponte solido e consolidato nel tempo tra l’Europa e l’India, in grado di eliminare gli attriti transfrontalieri, i ritardi nella comunicazione e i punti ciechi operativi.' : 'A robust, time-tested bridge between Europe and India eliminating cross-border friction, communication delays, and operational blind spots.') ?></p>
         </div>
 
         <!-- Interactive Animated Hub Flow Visualizer -->
         <div class="hub-flow-visualizer reveal-item">
             <div class="hub-flow-node">
                 <div class="hub-flow-badge"><?= flag_italy(22, 15) ?> <span>Milan, Italy</span></div>
-                <div class="hub-flow-desc"><?= $it ? 'Direzione Europea & Scoping' : 'European Direction & Scoping' ?></div>
+                <div class="hub-flow-desc"><?= $it ? 'Direzione Europea & Definizione degli Obiettivi' : 'European Direction & Scoping' ?></div>
             </div>
             <div class="hub-flow-connector">
                 <span class="hub-connector-line"></span>
@@ -182,7 +182,7 @@ render_header(t('page.about'), 'about');
             </div>
             <div class="hub-flow-node">
                 <div class="hub-flow-badge"><?= flag_india(22, 15) ?> <span>Kolkata, India</span></div>
-                <div class="hub-flow-desc"><?= $it ? 'Ingegneria CAD/FEM & Ispezioni' : 'CAD/FEM & Factory Quality' ?></div>
+                <div class="hub-flow-desc"><?= $it ? 'Ingegneria CAD/FEM & Verifica della Qualità' : 'CAD/FEM & Factory Quality' ?></div>
             </div>
         </div>
 
@@ -244,7 +244,7 @@ render_header(t('page.about'), 'about');
                     <span><?= $it ? 'Analisi chimiche e meccaniche EN 10204 3.1 e rilievi dimensionali 3D.' : 'EN 10204 3.1 chemical/tensile certificates and 3D CMM coordinate dimensional logs.' ?></span>
                 </div>
                 <div class="qa-badge-item">
-                    <strong>⚙️ <?= $it ? 'Controlli NDT & Pressione' : 'NDT & Pressure Testing' ?></strong>
+                    <strong>⚙️ <?= $it ? 'Controlli NDT & Controlli di Pressione' : 'NDT & Pressure Testing' ?></strong>
                     <span><?= $it ? 'Ispezioni ultrasuoni, liquidi penetranti e prove idrostatiche ad alta pressione.' : 'Ultrasonic, radiographic, magnetic particle tests, and hydrostatic pressure verification.' ?></span>
                 </div>
                 <div class="qa-badge-item">
@@ -268,23 +268,23 @@ render_header(t('page.about'), 'about');
         <div class="steps-quad-grid">
             <div class="step-card-modern reveal-item">
                 <div class="step-card-badge">01</div>
-                <h3><?= $it ? '15+ Anni di Esperienza' : '15+ Years Experience' ?></h3>
+                <h3><?= $it ? 'Oltre 15 Anni di Esperienza' : '15+ Years Experience' ?></h3>
                 <p><?= $it ? 'Ingegneri meccanici senior che comprendono tolleranze, carichi strutturali e metodologie di lavorazione.' : 'Senior mechanical engineering leadership that thoroughly understands tolerances, structural loads, and manufacturability.' ?></p>
             </div>
             <div class="step-card-modern reveal-item">
                 <div class="step-card-badge">02</div>
-                <h3><?= $it ? 'Zero Attriti Linguistici' : 'Zero Communication Gap' ?></h3>
-                <p><?= $it ? 'Interlocuzione diretta in Europa, eliminando incomprensioni tecniche, fusi orari e ritardi operativi.' : 'Seamless European communication in Italian or English with native on-ground Indian execution teams.' ?></p>
+                <h3><?= $it ? 'Comunicazione senza barriere' : 'Zero Communication Gap' ?></h3>
+                <p><?= $it ? 'Comunicazione europea fluida in italiano o in inglese con team operativi indiani in loco composti da madrelingua.' : 'Seamless European communication in Italian or English with native on-ground Indian execution teams.' ?></p>
             </div>
             <div class="step-card-modern reveal-item">
                 <div class="step-card-badge">03</div>
-                <h3><?= $it ? 'Fornitori Auditati' : 'Audited Suppliers' ?></h3>
-                <p><?= $it ? 'Collaboriamo solo con stabilimenti produttivi verificati per capacità tecnica, macchinari CNC e qualità.' : 'We work exclusively with vetted production facilities audited for machine capabilities, tooling, and ISO compliance.' ?></p>
+                <h3><?= $it ? 'Fornitori sottoposti a verifica' : 'Audited Suppliers' ?></h3>
+                <p><?= $it ? 'Collaboriamo esclusivamente con stabilimenti di produzione sottoposti a verifica per quanto riguarda le capacità dei macchinari, l’attrezzatura e la conformità alle norme ISO.' : 'We work exclusively with vetted production facilities audited for machine capabilities, tooling, and ISO compliance.' ?></p>
             </div>
             <div class="step-card-modern reveal-item">
                 <div class="step-card-badge">04</div>
-                <h3><?= $it ? 'Milestone Trasparenti' : 'Milestone Governance' ?></h3>
-                <p><?= $it ? 'Stato di avanzamento chiaro a ogni fase con report fotografici, certificati di prova e collaudi finali.' : 'Clear milestone tracking with inspection reports, material certificates, and formal quality sign-offs.' ?></p>
+                <h3><?= $it ? 'Gestione delle tappe fondamentali' : 'Milestone Governance' ?></h3>
+                <p><?= $it ? 'Monitoraggio chiaro delle tappe fondamentali con rapporti di ispezione, certificati dei materiali e approvazioni formali relative alla qualità.' : 'Clear milestone tracking with inspection reports, material certificates, and formal quality sign-offs.' ?></p>
             </div>
         </div>
     </div>
@@ -296,47 +296,47 @@ render_header(t('page.about'), 'about');
         <div class="section-head-wrap text-center reveal-item">
             <span class="eyebrow-pill blue"><?= $it ? 'Domande Frequenti' : 'FAQ' ?></span>
             <h2><?= $it ? 'Domande Frequenti su MSIX' : 'Frequently Asked Questions' ?></h2>
-            <p><?= $it ? 'Risposte rapide ai principali quesiti di aziende europee che collaborano con noi.' : 'Quick answers to common questions about our engagement model, IP security, and quality controls.' ?></p>
+            <p><?= $it ? 'Risposte rapide alle domande più frequenti sul nostro modello di collaborazione, sulla sicurezza della proprietà intellettuale e sui controlli di qualità.' : 'Quick answers to common questions about our engagement model, IP security, and quality controls.' ?></p>
         </div>
 
         <div class="faq-accordion-wrap reveal-item">
             <div class="faq-accordion-item is-active">
                 <button type="button" class="faq-accordion-btn" aria-expanded="true">
-                    <span><?= $it ? 'Come viene tutelata la nostra proprietà intellettuale (disegni CAD e specifiche)?' : 'How do you protect our intellectual property (CAD drawings and technical specifications)?' ?></span>
+                    <span><?= $it ? 'Come viene tutelata la nostra proprietà intellettuale (disegni CAD e specifiche tecniche)?' : 'How do you protect our intellectual property (CAD drawings and technical specifications)?' ?></span>
                     <span class="faq-icon-indicator">−</span>
                 </button>
                 <div class="faq-accordion-content" style="max-height:200px;opacity:1;padding-bottom:1.4rem;">
-                    <p><?= $it ? 'Tutte le informazioni, disegni 3D e specifiche tecniche vengono gestiti sotto rigorosi accordi di non divulgazione (NDA) stipulati secondo la legislazione europea. I file sono condivisi solo con personale auditato e vincolato da clausole di massima riservatezza.' : 'All technical documents, 3D models, and proprietary specifications are governed by strict European Non-Disclosure Agreements (NDAs). Data is encrypted and shared only with vetted engineers and certified suppliers bound by identical confidentiality covenants.' ?></p>
+                    <p><?= $it ? 'Tutti i documenti tecnici, i modelli 3D e le specifiche proprietarie sono soggetti a rigorosi accordi di riservatezza (NDA) europei. I dati vengono crittografati e condivisi esclusivamente con ingegneri selezionati e fornitori certificati, vincolati da identici impegni di riservatezza.' : 'All technical documents, 3D models, and proprietary specifications are governed by strict European Non-Disclosure Agreements (NDAs). Data is encrypted and shared only with vetted engineers and certified suppliers bound by identical confidentiality covenants.' ?></p>
                 </div>
             </div>
 
             <div class="faq-accordion-item">
                 <button type="button" class="faq-accordion-btn" aria-expanded="false">
-                    <span><?= $it ? 'Chi sarà il nostro punto di contatto durante il progetto?' : 'Who will be our direct point of contact throughout the project?' ?></span>
+                    <span><?= $it ? 'Chi sarà il nostro referente diretto per tutta la durata del progetto?' : 'Who will be our direct point of contact throughout the project?' ?></span>
                     <span class="faq-icon-indicator">+</span>
                 </button>
                 <div class="faq-accordion-content">
-                    <p><?= $it ? 'Il vostro referente primario sarà direttamente Raghav Kumar, Founder & Director, basato a Milano. Avrete un unico interlocutore nel vostro fuso orario, che coordina operativamente i team e i fornitori in India.' : 'Your primary technical and commercial interface is Raghav Kumar, Founder & Director, based in Milan, Italy. You interact with a senior engineer in your European timezone who directly manages on-ground operations in India.' ?></p>
+                    <p><?= $it ? 'Il vostro referente tecnico e commerciale principale è Raghav Kumar, fondatore e direttore, con sede a Milano, in Italia. Interagirete con un ingegnere senior nel vostro fuso orario europeo che gestisce direttamente le operazioni sul campo in India.' : 'Your primary technical and commercial interface is Raghav Kumar, Founder & Director, based in Milan, Italy. You interact with a senior engineer in your European timezone who directly manages on-ground operations in India.' ?></p>
                 </div>
             </div>
 
             <div class="faq-accordion-item">
                 <button type="button" class="faq-accordion-btn" aria-expanded="false">
-                    <span><?= $it ? 'Come verificate la qualità prima che le merci vengano spedite in Europa?' : 'How is quality verified before components or machinery are shipped to Europe?' ?></span>
+                    <span><?= $it ? 'Come viene verificata la qualità prima che i componenti o i macchinari vengano spediti in Europa?' : 'How is quality verified before components or machinery are shipped to Europe?' ?></span>
                     <span class="faq-icon-indicator">+</span>
                 </button>
                 <div class="faq-accordion-content">
-                    <p><?= $it ? 'Il nostro team tecnico a Kolkata effettua ispezioni fisiche in fabbrica a ogni milestone critica: controlli dimensionali con CMM, prove NDT non distruttive, analisi chimico-meccaniche con certificati EN 10204 3.1 e collaudi a secco o in pressione.' : 'Our Kolkata technical team performs on-site factory audits at defined milestones: 3D CMM dimensional verification, raw material EN 10204 3.1 testing, non-destructive evaluations, and hydrostatic/operational trial runs with full photographic and video logs.' ?></p>
+                    <p><?= $it ? 'Il nostro team tecnico di Calcutta effettua controlli in loco presso lo stabilimento in corrispondenza di fasi prestabilite: verifica dimensionale con CMM 3D, collaudo delle materie prime secondo la norma EN 10204 3.1, valutazioni non distruttive e prove idrostatiche/operative, con documentazione completa tramite foto e video.' : 'Our Kolkata technical team performs on-site factory audits at defined milestones: 3D CMM dimensional verification, raw material EN 10204 3.1 testing, non-destructive evaluations, and hydrostatic/operational trial runs with full photographic and video logs.' ?></p>
                 </div>
             </div>
 
             <div class="faq-accordion-item">
                 <button type="button" class="faq-accordion-btn" aria-expanded="false">
-                    <span><?= $it ? 'Quali modelli contrattuali e di collaborazione offrite?' : 'What commercial and engagement models do you offer?' ?></span>
+                    <span><?= $it ? 'Quali modelli commerciali e di collaborazione offrite?' : 'What commercial and engagement models do you offer?' ?></span>
                     <span class="faq-icon-indicator">+</span>
                 </button>
                 <div class="faq-accordion-content">
-                    <p><?= $it ? 'Offriamo contratti a milestone fissa per progetti specifici di ingegneria o sourcing, contratti di supporto continuativo su base oraria/mensile, oppure accordi di rappresentanza tecnica e commerciale per gare d’appalto in India.' : 'We provide fixed-milestone contracts for well-defined engineering packages or sourcing assignments, monthly dedicated engineering retainers, and structured success-fee/agency models for tender representation.' ?></p>
+                    <p><?= $it ? 'Offriamo contratti a tappe fisse per pacchetti di ingegneria ben definiti o incarichi di approvvigionamento, contratti mensili di assistenza tecnica dedicata e modelli strutturati basati su commissioni in caso di successo o di agenzia per la rappresentanza nelle gare d’appalto.' : 'We provide fixed-milestone contracts for well-defined engineering packages or sourcing assignments, monthly dedicated engineering retainers, and structured success-fee/agency models for tender representation.' ?></p>
                 </div>
             </div>
         </div>
@@ -348,9 +348,9 @@ render_header(t('page.about'), 'about');
     <div class="container">
         <div class="cta-banner-wrap reveal-item">
             <div class="cta-text-col">
-                <span class="eyebrow-pill dark-gold"><?= h($site['short_company']) ?> &bull; <?= $it ? 'Sede a Milano' : 'Milan HQ' ?></span>
-                <h2><?= h($it ? 'Pronti a Discutere il Vostro Progetto in India?' : 'Ready to Discuss Your Project in India?') ?></h2>
-                <p><?= h($it ? 'Fissate un colloquio preliminare con Raghav Kumar per analizzare le vostre specifiche tecniche e valutare la fattibilità operativa.' : 'Speak directly with Raghav Kumar, Founder & Director, based in Milan, Italy. We will review your technical requirements and provide clear, actionable guidance.') ?></p>
+                <span class="eyebrow-pill dark-gold"><?= $it ? 'MSIX • Sede a Milano' : 'MSIX • Milan HQ' ?></span>
+                <h2><?= h($it ? 'Siete pronti a discutere il Vostro Progetto in India?' : 'Ready to Discuss Your Project in India?') ?></h2>
+                <p><?= h($it ? 'Parla direttamente con Raghav Kumar, fondatore e direttore, con sede a Milano, in Italia. Esamineremo le tue esigenze tecniche e ti forniremo indicazioni chiare e concrete.' : 'Speak directly with Raghav Kumar, Founder & Director, based in Milan, Italy. We will review your technical requirements and provide clear, actionable guidance.') ?></p>
                 <div class="cta-chips-list">
                     <span class="cta-chip-item">✉️ <?= h($site['email']) ?></span>
                     <span class="cta-chip-item">💬 <?= h($site['phone']) ?></span>

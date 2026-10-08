@@ -6,32 +6,32 @@ render_header(t('page.industries'), 'industries');
 $detailedIndustries = [
     [
         'name' => $it ? 'Aerospaziale & Difesa' : 'Aerospace & Defense',
-        'desc' => $it ? 'Componenti ad altissima precisione, studio delle tolleranze, reverse engineering e documentazione qualità.' : 'High-precision components, tight tolerance design, reverse engineering, and quality documentation.',
+        'desc' => $it ? 'Componenti ad alta precisione, progettazione con tolleranze ristrette, reverse engineering e documentazione di qualità.' : 'High-precision components, tight tolerance design, reverse engineering, and quality documentation.',
         'icon' => '✈️',
     ],
     [
         'name' => $it ? 'Automotive & Veicoli Elettrici' : 'Automotive & EV Systems',
-        'desc' => $it ? 'Linee di assemblaggio robotizzate, attrezzature BIW, progettazione stampi e conformità documentale APQP/PPAP.' : 'Robotic assembly tooling, BIW fixtures, stamping die design, and comprehensive APQP/PPAP documentation.',
+        'desc' => $it ? 'Attrezzature di assemblaggio robotizzate, dispositivi di fissaggio per carrozzerie grezze (BIW), progettazione di stampi per stampaggio e documentazione completa APQP/PPAP.' : 'Robotic assembly tooling, BIW fixtures, stamping die design, and comprehensive APQP/PPAP documentation.',
         'icon' => '🚗',
     ],
     [
         'name' => $it ? 'Automazione Industriale & Robotica' : 'Industrial Automation & Robotics',
-        'desc' => $it ? 'Integrazione PLC/MCC, sistemi SCADA, celle robotizzate e flussi di produzione intelligenti secondo l’Industria 4.0.' : 'PLC/MCC integration, SCADA architecture, robotic workcells, and Industry 4.0 automated workflows.',
+        'desc' => $it ? 'Integrazione PLC/MCC, architettura SCADA, celle di lavoro robotizzate e flussi di lavoro automatizzati nell\'ambito dell\'Industria 4.0.' : 'PLC/MCC integration, SCADA architecture, robotic workcells, and Industry 4.0 automated workflows.',
         'icon' => '🤖',
     ],
     [
-        'name' => $it ? 'Energia & Impianti di Potenza' : 'Energy & Power Generation',
-        'desc' => $it ? 'Turbine, scambiatori termici, componenti per centrali elettriche e impianti a energia rinnovabile.' : 'Turbine components, heat exchangers, power generation equipment, and renewable energy thermal balance.',
+        'name' => $it ? 'Energia & Produzione di Energia Elettrica' : 'Energy & Power Generation',
+        'desc' => $it ? 'Componenti di turbine, scambiatori di calore, apparecchiature per la produzione di energia e bilancio termico delle energie rinnovabili.' : 'Turbine components, heat exchangers, power generation equipment, and renewable energy thermal balance.',
         'icon' => '⚡',
     ],
     [
         'name' => $it ? 'Ingegneria Meccanica Pesante' : 'Heavy Mechanical Engineering',
-        'desc' => $it ? 'Progettazione di macchinari industriali pesanti, modellazione 3D CAD e analisi tensionale FEM strutturale.' : 'Heavy industrial machinery design, 3D parametric CAD modeling, and FEM structural load simulations.',
+        'desc' => $it ? 'Progettazione di macchinari industriali pesanti, modellazione CAD parametrica 3D e simulazioni di carico strutturale tramite metodo degli elementi finiti (FEM).' : 'Heavy industrial machinery design, 3D parametric CAD modeling, and FEM structural load simulations.',
         'icon' => '🏗️',
     ],
     [
-        'name' => $it ? 'Produzione & Processi Manifatturieri' : 'Manufacturing & Process Engineering',
-        'desc' => $it ? 'Layout ottimali di fabbrica, studio dei flussi produttivi, lean manufacturing e standardizzazione delle linee.' : 'Factory layout optimization, production line balancing, lean manufacturing workflows, and standardization.',
+        'name' => $it ? 'Ingegneria di produzione e di processo' : 'Manufacturing & Process Engineering',
+        'desc' => $it ? 'Ottimizzazione del layout di fabbrica, bilanciamento delle linee di produzione, flussi di lavoro di produzione snella e standardizzazione.' : 'Factory layout optimization, production line balancing, lean manufacturing workflows, and standardization.',
         'icon' => '🏭',
     ],
     [
@@ -45,8 +45,8 @@ $detailedIndustries = [
         'icon' => '🛢️',
     ],
     [
-        'name' => $it ? 'Quadri Elettrici & Distribuzione' : 'Electrical Distribution & Panels',
-        'desc' => $it ? 'Ingegneria di potenza, quadri di comando motori (MCC), cablaggio bordo macchina e certificazioni CE.' : 'Power distribution architecture, Motor Control Centers (MCC), machine wiring, and CE certifications.',
+        'name' => $it ? 'Quadri Elettrici & Distribuzione elettrica' : 'Electrical Distribution & Panels',
+        'desc' => $it ? 'Architettura di distribuzione dell\'energia, quadri di controllo motori (MCC), cablaggio delle macchine e certificazioni CE.' : 'Power distribution architecture, Motor Control Centers (MCC), machine wiring, and CE certifications.',
         'icon' => '🔌',
     ],
 ];
@@ -55,9 +55,9 @@ $detailedIndustries = [
 <!-- Page Hero -->
 <section class="page-hero-banner">
     <div class="container reveal-item">
-        <span class="eyebrow-pill dark-gold">🏭 <?= $it ? 'Settori Industriali' : 'Core Industry Sectors' ?></span>
+        <span class="eyebrow-pill dark-gold">🏭 <?= $it ? 'Settori industriali principali' : 'Core Industry Sectors' ?></span>
         <h1><?= h($it ? 'Settori in Cui Operiamo' : 'Industries We Serve') ?></h1>
-        <p><?= h($it ? 'Supporto ingegneristico specialistico e conformità normativa per i comparti industriali più esigenti.' : 'Sector-specific engineering support tailored to rigorous technical standards, compliance, and manufacturability.') ?></p>
+        <p><?= h($it ? 'Supporto ingegneristico specifico per settore, adattato a rigorosi standard tecnici, di conformità e di fattibilità produttiva.' : 'Sector-specific engineering support tailored to rigorous technical standards, compliance, and manufacturability.') ?></p>
     </div>
 </section>
 
@@ -65,8 +65,8 @@ $detailedIndustries = [
 <section class="section-pad">
     <div class="container">
         <div class="section-head-wrap text-center reveal-item">
-            <span class="eyebrow-pill blue"><?= $it ? 'Campi di Applicazione' : 'Industrial Domains' ?></span>
-            <h2><?= $it ? '15+ Anni di Competenze Applicate ai Settori Chiave' : 'Cross-Sector Engineering Mastery' ?></h2>
+            <span class="eyebrow-pill blue"><?= $it ? 'Settori industriali' : 'Industrial Domains' ?></span>
+            <h2><?= $it ? 'Competenze ingegneristiche intersettoriali' : 'Cross-Sector Engineering Mastery' ?></h2>
             <p><?= $it ? 'La profonda conoscenza dei requisiti tecnici specifici di ogni settore garantisce che ogni progetto soddisfi i più alti criteri di affidabilità.' : 'Deep technical understanding of domain-specific standards ensures every component meets demanding operational criteria.' ?></p>
         </div>
 
@@ -79,7 +79,7 @@ $detailedIndustries = [
             </div>
             <div class="filter-pill-chips" id="industryFilterChips">
                 <button type="button" class="filter-chip-btn is-active" data-filter="all"><?= $it ? 'Tutti i Settori' : 'All Sectors' ?></button>
-                <button type="button" class="filter-chip-btn" data-filter="aerospaziale|aerospace|difesa|defense"><?= $it ? 'Aerospazio & Difesa' : 'Aerospace & Defense' ?></button>
+                <button type="button" class="filter-chip-btn" data-filter="aerospaziale|aerospace|difesa|defense"><?= $it ? 'Aerospaziale & Difesa' : 'Aerospace & Defense' ?></button>
                 <button type="button" class="filter-chip-btn" data-filter="automotive|ev|veicoli|electric"><?= $it ? 'Automotive & EV' : 'Automotive & EV' ?></button>
                 <button type="button" class="filter-chip-btn" data-filter="energia|energy|oil|gas|power|rinnovabile"><?= $it ? 'Energia & Oil/Gas' : 'Energy & Oil/Gas' ?></button>
                 <button type="button" class="filter-chip-btn" data-filter="meccanica|pesante|heavy|miniere|mining|ferroviario|rail"><?= $it ? 'Meccanica Pesante' : 'Heavy Mechanical' ?></button>
@@ -96,7 +96,7 @@ $detailedIndustries = [
                     <p><?= h($ind['desc']) ?></p>
                     <div class="card-action">
                         <a href="contact.php?req=<?= urlencode('Engineering Support') ?>" class="btn btn-outline-dark btn-sm" style="width:100%;">
-                            <?= $it ? 'Richiedi per questo settore' : 'Inquire for this Sector' ?> &rarr;
+                            <?= $it ? 'Richiedi informazioni per questo settore' : 'Inquire for this Sector' ?> &rarr;
                         </a>
                     </div>
                 </div>

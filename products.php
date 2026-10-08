@@ -53,15 +53,15 @@ $productList = [
         'icon' => '💨',
     ],
     [
-        'name' => $it ? 'Filtri Industriali & Abbattimento Polveri' : 'Heavy Industrial Filters & Baghouses',
+        'name' => $it ? 'Filtri e depuratori a maniche per l\'industria pesante' : 'Heavy Industrial Filters & Baghouses',
         'category' => $it ? 'Filtrazione & Ambiente' : 'Environmental Filtration',
         'desc' => $it ? 'Filtri a maniche, a cartuccia e cicloni separatori per il contenimento delle emissioni e il recupero delle polveri.' : 'High-capacity baghouse, cartridge, and cyclone filtration units ensuring air emission compliance and powder recovery.',
         'icon' => '🛡️',
     ],
     [
         'name' => $it ? 'Argani e Sistemi di Sollevamento' : 'Heavy-Duty Winches & Hoisting Systems',
-        'category' => $it ? 'Sollevamento Pesante' : 'Lifting & Rigging',
-        'desc' => $it ? 'Argani elettrici e idraulici per applicazioni navali, minerarie ed edilizie.' : 'Industrial electric and hydraulic winches for offshore, marine, and construction.',
+        'category' => $it ? 'Sollevamento pesante e movimentazione' : 'Lifting & Rigging',
+        'desc' => $it ? 'Argani elettrici e idraulici per applicazioni offshore, navali ed edilizie.' : 'Industrial electric and hydraulic winches for offshore, marine, and construction.',
         'icon' => '⚓',
     ],
     [
@@ -76,9 +76,9 @@ $productList = [
 <!-- Page Hero -->
 <section class="page-hero-banner">
     <div class="container reveal-item">
-        <span class="eyebrow-pill dark-gold">⚙️ <?= $it ? 'Catalogo Apparecchiature' : 'Engineered Equipment' ?></span>
+        <span class="eyebrow-pill dark-gold">⚙️ <?= $it ? 'Apparecchiature ingegnerizzate' : 'Engineered Equipment' ?></span>
         <h1><?= h($it ? 'Prodotti & Apparecchiature Industriali' : 'Industrial Products & Equipment') ?></h1>
-        <p><?= h($it ? 'Supporto ingegneristico, sourcing qualificato e controllo qualità per macchinari e componenti critici.' : 'Engineering-backed sourcing, manufacturing inspection, and technical support for heavy industrial products.') ?></p>
+        <p><?= h($it ? 'Servizi di approvvigionamento, controllo qualità e supporto tecnico per prodotti industriali pesanti, supportati da un approccio ingegneristico.' : 'Engineering-backed sourcing, manufacturing inspection, and technical support for heavy industrial products.') ?></p>
     </div>
 </section>
 
@@ -86,9 +86,9 @@ $productList = [
 <section class="section-pad">
     <div class="container">
         <div class="section-head-wrap text-center reveal-item">
-            <span class="eyebrow-pill blue"><?= $it ? 'Capacità di Fornitura' : 'Engineered Solutions' ?></span>
-            <h2><?= $it ? 'Componenti & Macchinari per Impianti Complessi' : 'Industrial Components & Automated Machinery' ?></h2>
-            <p><?= $it ? 'MSIX gestisce la selezione, il reverse engineering, l’ispezione in fabbrica e la logistica di fornitura.' : 'We provide end-to-end technical oversight, dimensional quality audits, and delivery coordination for precision industrial equipment.' ?></p>
+            <span class="eyebrow-pill blue"><?= $it ? 'Soluzioni ingegnerizzate' : 'Engineered Solutions' ?></span>
+            <h2><?= $it ? 'Componenti industriali e macchinari automatizzati' : 'Industrial Components & Automated Machinery' ?></h2>
+            <p><?= $it ? 'MSIX offre supervisione tecnica completa, verifiche dimensionali di qualità e coordinamento delle consegne per apparecchiature industriali di precisione.' : 'We provide end-to-end technical oversight, dimensional quality audits, and delivery coordination for precision industrial equipment.' ?></p>
         </div>
 
         <!-- Interactive Instant Search & Category Filter Bar -->
@@ -101,7 +101,7 @@ $productList = [
             <div class="filter-pill-chips" id="productFilterChips">
                 <button type="button" class="filter-chip-btn is-active" data-filter="all"><?= $it ? 'Tutti i Prodotti' : 'All Products' ?></button>
                 <button type="button" class="filter-chip-btn" data-filter="valvole|valves|pompe|pumps"><?= $it ? 'Valvole & Pompe' : 'Valves & Pumps' ?></button>
-                <button type="button" class="filter-chip-btn" data-filter="trasporto|nastri|elevatori|coclee|conveyor|bulk"><?= $it ? 'Movimentazione' : 'Material Handling' ?></button>
+                <button type="button" class="filter-chip-btn" data-filter="trasporto|nastri|elevatori|coclee|conveyor|bulk"><?= $it ? 'Movimentazione dei materiali' : 'Material Handling' ?></button>
                 <button type="button" class="filter-chip-btn" data-filter="filtri|baghouse|filtrazione"><?= $it ? 'Filtrazione' : 'Filtration' ?></button>
                 <button type="button" class="filter-chip-btn" data-filter="quadri|plc|mcc|automazione"><?= $it ? 'Quadri Elettrici & PLC' : 'Panels & Automation' ?></button>
             </div>

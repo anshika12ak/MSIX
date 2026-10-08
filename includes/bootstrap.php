@@ -8,7 +8,7 @@ $site = [
     'short_company' => 'MSIX',
     'tagline' => 'Engineering, sourcing and market access for European companies working in India',
     'email' => 'info@m6eds.com',
-    'phone' => '+39-351-9715596',
+    'phone' => '+39 351 971 5596',
     'contact_name' => 'Raghav Kumar',
     'contact_role' => 'Founder & Director',
     'experience_years' => '15+',
@@ -67,11 +67,6 @@ if (!function_exists('flag_india')) {
     }
 }
 
-if (!function_exists('flag_uk')) {
-    function flag_uk(int $width = 20, int $height = 14): string {
-        return '<svg class="flag-svg flag-gb" viewBox="0 0 640 480" width="' . $width . '" height="' . $height . '" style="display:inline-block;vertical-align:-2px;border-radius:2px;box-shadow:0 0 1px rgba(0,0,0,0.5);margin-right:3px;" aria-label="UK Flag"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0h75z"/><path fill="#C8102E" d="m424 288 216 156v36h-48L376 324l48-36zM640 0v12L464 144l48 36L640 48V0zm-424 192L0 36V0h48l216 156-48 36zm-48 96L0 444v36h48l168-120-48-36z"/><path fill="#FFF" d="M240 0h160v480H240zM0 160h640v160H0z"/><path fill="#C8102E" d="M267 0h106v480H267zM0 187h640v106H0z"/></svg>';
-    }
-}
 
 $site['image_url'] = absolute_asset('assets/images/msixlogo.png');
 
@@ -175,17 +170,17 @@ $i18n = [
         'nav.industries' => 'Settori',
         'nav.products' => 'Prodotti',
         'standards.exp' => '15+ Anni di Esperienza Industriale',
-        'standards.eu_india' => '🇮🇹 Standard Europei ⇄ 🇮🇳 Produzione in India',
+        'standards.eu_india' => '🇮🇹 Standard Europei ⇄ 🇮🇳 Normativa in India',
         'footer.company' => 'Azienda',
         'footer.services' => 'Servizi',
         'footer.contact' => 'Contatti',
-        'footer.tagline' => 'Ingegneria, sourcing e accesso al mercato per aziende europee in India. Coordinato dall’Italia.',
+        'footer.tagline' => 'Ingegneria, approvvigionamento e accesso al mercato per aziende europee in India. Coordinamento dall’Italia.',
         'footer.about_link' => 'Perché MSIX',
         'footer.privacy' => 'Informativa sulla Privacy',
         'footer.terms' => 'Termini e Condizioni',
         'common.learn_more' => 'Scopri di Più',
         'common.request_quote' => 'Richiedi Preventivo',
-        'common.talk_to_us' => 'Parliamo',
+        'common.talk_to_us' => 'Parla con noi',
         'common.see_offer' => 'Cosa Offriamo',
         'contact.email_label' => 'Email',
         'contact.name' => 'Nome e Cognome',
@@ -236,7 +231,7 @@ if (!function_exists('render_header')) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= h($title) ?> | <?= h($site['company']) ?></title>
-    <meta name="description" content="MSIX Engineering & Design Solution: 15+ years of engineering, sourcing and market access for European companies working in India. Coordinated from Italy.">
+    <meta name="description" content="<?= h($it ? 'MSIX Engineering & Design Solution: oltre 15 anni di esperienza in ingegneria, approvvigionamento e accesso al mercato per aziende europee operanti in India. Coordinamento dall\'Italia.' : 'MSIX Engineering & Design Solution: 15+ years of engineering, sourcing and market access for European companies working in India. Coordinated from Italy.') ?>">
     <meta property="og:title" content="<?= h($title) ?> | MSIX Engineering & Design Solution">
     <meta property="og:image" content="<?= h($site['image_url']) ?>">
     <link rel="icon" type="image/png" href="<?= h(asset('assets/images/msixlogo.png')) ?>">
@@ -255,11 +250,11 @@ if (!function_exists('render_header')) {
                 <div class="top-bar-pill">
                     <?= flag_italy(16, 11) ?> <span class="top-pill-label"><?= $it ? 'Standard Europei' : 'European Standards' ?></span>
                     <span class="top-pill-arrow">⇄</span>
-                    <?= flag_india(16, 11) ?> <span class="top-pill-label"><?= $it ? 'Produzione in India' : 'Indian Scale' ?></span>
+                    <?= flag_india(16, 11) ?> <span class="top-pill-label"><?= $it ? 'Normativa in India' : 'Indian Scale' ?></span>
                 </div>
                 <div class="top-bar-live-badge">
                     <span class="live-pulse-dot"></span>
-                    <span><?= $it ? 'Hub Operativo Attivo' : 'Active EU–IN Bridge' ?></span>
+                    <span><?= $it ? 'Ponte Operativo Attivo EU-IN' : 'Active EU–IN Bridge' ?></span>
                 </div>
             </div>
             <div class="top-bar-right">
@@ -334,7 +329,7 @@ if (!function_exists('render_header')) {
     </ul>
     <div class="mobile-drawer-footer">
         <div class="mobile-drawer-lang-switch">
-            <span class="drawer-section-label"><?= $it ? 'Lingua / Language:' : 'Select Language:' ?></span>
+            <span class="drawer-section-label"><?= $it ? 'Seleziona Lingua:' : 'Select Language:' ?></span>
             <div class="lang-switch-pill">
                 <a class="lang-pill-btn <?= $lang === 'it' ? 'active' : '' ?>" href="<?= h(current_page_with_lang('it')) ?>" title="Italiano"><?= flag_italy(16, 11) ?> <span>Italiano</span></a>
                 <a class="lang-pill-btn <?= $lang === 'en' ? 'active' : '' ?>" href="<?= h(current_page_with_lang('en')) ?>" title="English"><?= flag_india(16, 11) ?> <span>English</span></a>
@@ -397,15 +392,15 @@ if (!function_exists('render_footer')) {
         <div class="footer-col">
             <h4><?= h(t('footer.services')) ?></h4>
             <ul class="footer-link-list">
-                <li><a href="services.php#service-1"><?= $it ? 'Accesso al Mercato e Gare' : 'Market Access & Tenders' ?></a></li>
-                <li><a href="services.php#service-2"><?= $it ? 'Outsourcing Tecnico' : 'Engineering Outsourcing' ?></a></li>
+                <li><a href="services.php#service-1"><?= $it ? 'Accesso al Mercato e Gare d’Appalto' : 'Market Access & Tenders' ?></a></li>
+                <li><a href="services.php#service-2"><?= $it ? 'Esternalizzazione dei Servizi di Ingegneria' : 'Engineering Outsourcing' ?></a></li>
                 <li><a href="services.php#service-3"><?= $it ? 'Trasferimento Tecnologico' : 'Technology Transfer' ?></a></li>
             </ul>
         </div>
         <div class="footer-col">
             <h4><?= h(t('footer.contact')) ?></h4>
             <p style="font-size:0.88rem;color:#ffffff;margin-bottom:0.2rem;"><strong><?= h($site['contact_name']) ?></strong></p>
-            <p style="font-size:0.8rem;color:#94a3b8;margin-bottom:0.5rem;"><?= h($site['contact_role']) ?> (<?= $it ? 'Sede in Italia' : 'Based in Italy' ?>)</p>
+            <p style="font-size:0.8rem;color:#94a3b8;margin-bottom:0.5rem;"><?= h($site['contact_role']) ?> (<?= $it ? 'ubicato in Italia' : 'Based in Italy' ?>)</p>
             <p><a href="mailto:<?= h($site['email']) ?>" style="color:#93c5fd;font-size:0.84rem;display:block;margin-bottom:0.2rem;"><?= h($site['email']) ?></a></p>
             <p><a href="<?= h($site['whatsapp_link']) ?>" target="_blank" rel="noopener noreferrer" style="color:#4ade80;font-size:0.84rem;display:block;margin-bottom:0.6rem;">WhatsApp: +39 351 971 5596</a></p>
             <p style="font-size:0.78rem;color:#cbd5e1;">📍 Milan · Delhi · Kolkata</p>
@@ -413,7 +408,7 @@ if (!function_exists('render_footer')) {
     </div>
     <div class="footer-bottom-bar">
         <div class="container footer-bottom-flex">
-            <span>&copy; <?= date('Y') ?> <?= h($site['company']) ?>. <?= $it ? 'Tutti i diritti riservati.' : 'All rights reserved.' ?></span>
+            <span>&copy; <?= date('Y') ?> <?= h($site['company']) ?> <?= $it ? 'Tutti i diritti riservati.' : 'All rights reserved.' ?></span>
             <div class="footer-lang-switch" style="display:inline-flex;align-items:center;gap:0.5rem;">
                 <span style="font-size:0.8rem;color:#94a3b8;"><?= $it ? 'Lingua:' : 'Language:' ?></span>
                 <a class="footer-lang-link <?= $lang === 'it' ? 'active' : '' ?>" href="<?= h(current_page_with_lang('it')) ?>" style="display:inline-flex;align-items:center;gap:4px;color:<?= $lang === 'it' ? '#38bdf8' : '#94a3b8' ?>;font-weight:<?= $lang === 'it' ? '700' : '500' ?>;text-decoration:none;"><?= flag_italy(16, 11) ?> IT</a>

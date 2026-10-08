@@ -70,8 +70,8 @@ render_header(t('page.contact'), 'contact');
 <section class="page-hero-banner">
     <div class="container reveal-item">
         <span class="eyebrow-pill dark-gold">✉️ <?= $it ? 'Contatto Diretto' : 'Direct Contact' ?></span>
-        <h1><?= h($it ? 'Parliamo della Vostra Esigenza' : 'Let’s Discuss Your Requirement') ?></h1>
-        <p><?= h($it ? 'Inviateci una breve descrizione del vostro progetto: risponderemo tempestivamente per una valutazione preliminare.' : 'Send us an outline of your engineering, sourcing or market access requirement and we will respond promptly.') ?></p>
+        <h1><?= h($it ? 'Parliamo delle Vostre Esigenze' : 'Let’s Discuss Your Requirement') ?></h1>
+        <p><?= h($it ? 'Inviateci una descrizione delle vostre esigenze in materia di ingegneria, approvvigionamento o accesso al mercato: vi risponderemo tempestivamente.' : 'Send us an outline of your engineering, sourcing or market access requirement: we will respond promptly.') ?></p>
     </div>
 </section>
 
@@ -85,7 +85,7 @@ render_header(t('page.contact'), 'contact');
                 <img class="contact-person-avatar" src="<?= h(asset('assets/images/raghav-kumar.jpg')) ?>" alt="Raghav Kumar">
                 <div>
                     <h2><?= h($site['contact_name']) ?></h2>
-                    <p><strong><?= h($site['contact_role']) ?></strong> (<?= $it ? 'Sede a Milano, Italia' : 'Based in Milan, Italy' ?>)</p>
+                    <p><strong><?= h($it ? 'Founder & Director' : $site['contact_role']) ?></strong> (<?= $it ? 'Sede a Milano, Italia' : 'Based in Milan, Italy' ?>)</p>
                 </div>
             </div>
 
@@ -93,7 +93,7 @@ render_header(t('page.contact'), 'contact');
                 <div class="contact-method-item">
                     <span class="icon">✉</span>
                     <div>
-                        <span style="font-size:0.78rem;color:var(--text-muted);display:block;"><?= h(t('contact.email_label')) ?>:</span>
+                        <span style="font-size:0.78rem;color:var(--text-muted);display:block;"><?= h($it ? 'Email' : 'Email') ?>:</span>
                         <a href="mailto:<?= h($site['email']) ?>"><?= h($site['email']) ?></a>
                     </div>
                 </div>
@@ -110,22 +110,22 @@ render_header(t('page.contact'), 'contact');
                         <span style="font-size:0.78rem;color:var(--text-muted);display:block;"><?= $it ? 'Sedi Operative' : 'Operating Presence' ?>:</span>
                         <span style="font-size:0.86rem;color:var(--text-main);line-height:1.4;display:block;">
                             • <strong>Milan, Italy:</strong> <?= $it ? 'Direzione Europea' : 'European Direction' ?><br>
-                            • <strong>Delhi, India:</strong> <?= $it ? 'Presidio Gare & Istituzioni' : 'Tenders & Regulatory' ?><br>
-                            • <strong>Kolkata, India:</strong> <?= $it ? 'Ingegneria & Fornitori' : 'Engineering & Sourcing' ?>
+                            • <strong>Delhi, India:</strong> <?= $it ? 'Gare d\'appalto e normative' : 'Tenders & Regulatory' ?><br>
+                            • <strong>Kolkata, India:</strong> <?= $it ? 'Ingegneria e approvvigionamento (fornitori)' : 'Engineering & Sourcing' ?>
                         </span>
                     </div>
                 </div>
             </div>
 
             <div style="background:var(--bg-alt);padding:0.9rem;border-radius:var(--radius-sm);border:1px solid var(--border-light);font-size:0.82rem;color:var(--text-muted);line-height:1.45;">
-                <strong style="color:var(--primary-dark);display:block;margin-bottom:0.2rem;">🔒 <?= $it ? 'Riservatezza Garantita' : 'Confidentiality & Response' ?></strong>
-                <?= $it ? 'Trattiamo ogni informazione e disegno con la massima riservatezza e con discrezione.' : 'All technical documents and inquiries are handled under strict confidentiality and with discretion.' ?>
+                <strong style="color:var(--primary-dark);display:block;margin-bottom:0.2rem;">🔒 <?= $it ? 'Riservatezza' : 'Confidentiality' ?></strong>
+                <?= $it ? 'Tutti i documenti e le richieste di informazioni tecniche vengono trattati con la massima riservatezza e discrezione.' : 'All technical documents and inquiries are handled under strict confidentiality and with discretion.' ?>
             </div>
         </div>
 
         <!-- Right: Structured Enquiry Form -->
         <div class="contact-form-panel reveal-item">
-            <h3><?= $it ? 'Modulo di Richiesta' : 'Project Requirement Form' ?></h3>
+            <h3><?= $it ? 'Modulo dei requisiti di progetto' : 'Project Requirement Form' ?></h3>
             <p class="subtext"><?= $it ? 'Compilate i campi sottostanti per indirizzare la richiesta al team tecnico.' : 'Please provide your project details below.' ?></p>
 
             <?php if ($sent): ?>
@@ -144,41 +144,41 @@ render_header(t('page.contact'), 'contact');
             <form method="post" action="contact.php" class="form-grid">
                 <div class="form-row-duo">
                     <label class="form-field">
-                        <span><?= h(t('contact.name')) ?> <span class="req">*</span></span>
+                        <span><?= $it ? 'Nome e Cognome' : 'Full Name' ?> <span class="req">*</span></span>
                         <input type="text" name="name" required placeholder="Mario Rossi / John Doe" value="<?= h($input['name']) ?>">
                     </label>
                     <label class="form-field">
-                        <span><?= h(t('contact.company')) ?> <span class="req">*</span></span>
+                        <span><?= $it ? 'Nome Azienda' : 'Company Name' ?> <span class="req">*</span></span>
                         <input type="text" name="company" required placeholder="Acme Engineering SpA" value="<?= h($input['company']) ?>">
                     </label>
                 </div>
 
                 <div class="form-row-duo">
                     <label class="form-field">
-                        <span><?= h(t('contact.country')) ?> <span class="req">*</span></span>
+                        <span><?= $it ? 'Paese' : 'Country' ?> <span class="req">*</span></span>
                         <input type="text" name="country" required placeholder="Italy, Germany, France, India" value="<?= h($input['country']) ?>">
                     </label>
                     <label class="form-field">
-                        <span><?= h(t('contact.email_label')) ?> <span class="req">*</span></span>
+                        <span><?= $it ? 'Email' : 'Email' ?> <span class="req">*</span></span>
                         <input type="email" name="email" required placeholder="name@company.com" value="<?= h($input['email']) ?>">
                     </label>
                 </div>
 
                 <div class="form-row-duo">
                     <label class="form-field">
-                        <span><?= h(t('contact.phone')) ?></span>
+                        <span><?= $it ? 'Telefono (Facoltativo)' : 'Phone (Optional)' ?></span>
                         <input type="tel" name="phone" placeholder="+39 ..." value="<?= h($input['phone']) ?>">
                     </label>
                     <label class="form-field">
-                        <span><?= h(t('contact.requirement')) ?> <span class="req">*</span></span>
+                        <span><?= $it ? 'Area di Esigenza' : 'Requirement Area' ?> <span class="req">*</span></span>
                         <select name="requirement" required>
                             <option value=""><?= $it ? '-- Seleziona --' : '-- Select One --' ?></option>
                             <?php
                             $options = [
-                                'Market Access / Tenders' => $it ? 'Accesso al Mercato / Gare' : 'Market Access / Tenders',
-                                'Engineering Support' => $it ? 'Supporto Ingegneria & CAD/FEM' : 'Engineering Support (CAD/FEM)',
+                                'Market Access / Tenders' => $it ? 'Accesso al Mercato / Gare di Appalto' : 'Market Access / Tenders',
+                                'Engineering Support' => $it ? 'Supporto di Ingegneria & CAD/FEM' : 'Engineering Support (CAD/FEM)',
                                 'Sourcing / Technology Transfer' => $it ? 'Sourcing / Trasferimento Tecnologico' : 'Sourcing / Technology Transfer',
-                                'Other' => $it ? 'Altra Richiesta' : 'Other Industrial Requirement',
+                                'Other' => $it ? 'Altra Richiesta / altri requisiti industriali' : 'Other Industrial Requirement',
                             ];
                             foreach ($options as $val => $label):
                                 $isSelected = ($input['requirement'] === $val) || (isset($_GET['req']) && $_GET['req'] === $val);
@@ -190,17 +190,17 @@ render_header(t('page.contact'), 'contact');
                 </div>
 
                 <label class="form-field">
-                    <span><?= h(t('contact.message')) ?> <span class="req">*</span></span>
+                    <span><?= $it ? 'Descrizione del Progetto / Messaggio' : 'Project Outline / Message' ?> <span class="req">*</span></span>
                     <textarea name="message" rows="4" required placeholder="<?= $it ? 'Descrivete brevemente le specifiche tecniche, il settore o gli obiettivi del vostro progetto...' : 'Describe your project requirements, technical specifications, or timeline expectations...' ?>"><?= h($input['message']) ?></textarea>
                 </label>
 
                 <p style="font-size:0.78rem;color:var(--text-muted);margin:0;">
                     🔒 <?= $it ? 'Inviando questo modulo accetti la nostra' : 'By submitting this form, you agree to our' ?>
-                    <a href="privacy.php" target="_blank" style="color:var(--accent);text-decoration:underline;"><?= h(t('footer.privacy')) ?></a>.
+                    <a href="privacy.php" target="_blank" style="color:var(--accent);text-decoration:underline;"><?= $it ? 'Informativa sulla Privacy' : 'Privacy Policy' ?></a>.
                 </p>
 
                 <button class="btn btn-primary btn-block" type="submit">
-                    <?= h(t('contact.send')) ?> &rarr;
+                    <?= $it ? 'Invia Richiesta' : 'Send Enquiry' ?> &rarr;
                 </button>
             </form>
         </div>
